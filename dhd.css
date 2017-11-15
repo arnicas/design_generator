@@ -1,0 +1,222 @@
+body {
+	background-color: #1A1A1A;
+}
+.linkFont {
+	font-weight: bold;
+}
+
+/* I changed .divElement to madlib-container, as it's more descriptive  of what it's doin there */
+
+.madlib-container  {
+	font-family: 'Lora', Georgia, serif;
+	font-size: 44px;
+	color: #FFF;
+	text-align: left;
+	line-height: 60px;
+	left:10%;
+	top:30%;
+	position:absolute;
+	bottom: 0;
+	right: 0;
+
+	/* some fanciness - made it opacity:0 so it'd be transparent til the JSON loads
+	in the JS, when the JSON loads, it adds the 'fadeIn' class, which makes the opacity:1;
+	the fade transitions because of the transition attribute*/
+	opacity: 0.35;
+	transition: opacity 0.3s;
+}
+
+@media (max-width: 1100px) {
+	.madlib-container{
+		/* you don't need to put these in here again - they'll already be applied from being part of the default above
+		stuff included in media query CSS rules overrides other rules */
+		/*position:absolute;
+		height:350px;
+		text-align:left;
+		right: 0;
+		*/
+	}
+
+	input[type="text"] {
+		width: 1000px;
+		font-size: 40px;
+		overflow: visible;
+	}
+}
+@media (max-width: 768px) {
+	.madlib-container{
+		left:10%;
+		top:10%;
+		font-size: 36px;
+		/* you don't need to put these in here again - they'll already be applied from being part of the default above
+		stuff included in media query CSS rules overrides other rules */
+		/*position:absolute;
+		height:350px;
+		text-align:left;
+		right: 0;
+		*/
+	}
+	input[type="text"] {
+		width: 300px;
+		font-size: 36px;
+	}
+}
+
+.madlib-container span input[type="text"]{
+	/* moved all the common attributes of all the spans in here */
+    border-style: solid;  
+    border-color: #1A1A1A; 
+    outline:0;
+    width: 700px;  /* text input must be sized big or it cuts off */
+    /* using the google font Lora, similar to Sentinel */
+    /* in general for font families - it's good to include 1-2 fall-through backups. */
+    font-family: 'Lora', Georgia, serif;
+    font-size: 44px;
+    background-color: transparent;  
+
+}
+.avec input[type="text"]{ 
+	color: #09F;
+}
+
+.inspirations input[type="text"]{ 
+	color: #6C9;
+}
+
+.experience input[type="text"]{ 
+	color: #C6C;
+	overflow: visible;
+}
+
+.quand input[type="text"]{ 
+	color: #F90;
+}
+
+.medium input[type="text"] {
+	color: #FF0;
+}
+
+p.linkFont {
+	font-family: 'Inconsolata'; 
+	font-size: 22px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#home-button {
+	position: absolute;
+	top: 15;
+	left: 15;
+	font-size: 30px;
+}
+
+#home-button:hover {
+    opacity:0.5;
+}
+
+#logo {
+	position: absolute;
+	bottom: 15;
+	left: 15;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#logo:hover {
+    opacity:0.5;
+}
+
+span.linkFont {
+	font-family: 'Lora';
+	font-style: italic; 
+}
+
+a:link {
+    color: white;
+	text-decoration: none;
+}
+a:visited {
+    color:white;
+    	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+    color: #666;
+}
+a:active {
+    color: #666;
+}
+
+
+#print-button {
+	position: absolute;
+	bottom: 15;
+	right: 15;
+	font-family: 'Inconsolata'; 
+	font-size: 20px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#print-button:hover {
+    opacity:0.5;
+}
+
+/*changes*/
+#text-input {
+	position: absolute;
+	bottom: 15;
+	left: 15;
+}
+
+p.about {
+	position: absolute;
+	/*top: 15;*/
+	right: 15;
+	font-family: 'Inconsolata';
+	line-height: 120%;
+	font-size: 20px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+p.logo {
+	position: absolute;
+	bottom: 15;
+	left: 15;
+	font-family: 'Inconsolata';
+	color: rgb(0,0,0);
+	font-size: 20px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.about_text {
+	position: absolute;
+	top: 75;
+	right: 250;
+	left: 250;
+	font-family: 'Inconsolata'; 
+	font-size: 16px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+/*changes*/
+
+.fadeIn {
+	opacity: 1;
+}
