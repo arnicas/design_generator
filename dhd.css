@@ -9,7 +9,7 @@ body {
 
 .madlib-container  {
 	font-family: 'Lora', Georgia, serif;
-	font-size: 44px;
+	font-size: 40px;
 	color: #FFF;
 	text-align: left;
 	line-height: 60px;
@@ -57,7 +57,7 @@ body {
 		*/
 	}
 	input[type="text"] {
-		width: 700px;
+		width: 750px;
 		font-size: 36px;
 	}
 }
@@ -67,11 +67,11 @@ body {
     border-style: solid;  
     border-color: #1A1A1A; 
     outline:0;
-    width: 700px;  /* text input must be sized big or it cuts off */
+    width: 770px;  /* text input must be sized big or it cuts off */
     /* using the google font Lora, similar to Sentinel */
     /* in general for font families - it's good to include 1-2 fall-through backups. */
     font-family: 'Lora', Georgia, serif;
-    font-size: 44px;
+    font-size: 40px;
     background-color: transparent;  
 
 }
